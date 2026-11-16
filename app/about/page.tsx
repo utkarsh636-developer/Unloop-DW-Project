@@ -79,12 +79,6 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Research notice banner */}
-      <div className="bg-[#fcf8e8] border border-[#ecd99f] rounded-2xl p-4 sm:p-5 flex gap-3 mb-10 text-xs sm:text-sm text-[#664d14]">
-        <Info className="w-5 h-5 text-[#9a731b] shrink-0 mt-0.5" />
-        <p className="leading-relaxed">{RESEARCH_NOTICE}</p>
-      </div>
-
       {/* What is Unloop */}
       <section className="bg-white border border-[#d4e2d1] rounded-3xl p-6 sm:p-8 mb-8 shadow-xs">
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#dce9da] text-[#162e1a] text-xs font-bold tracking-wide mb-3 border border-[#c4dcbf]">
@@ -234,6 +228,9 @@ export default function AboutPage() {
           Explore Researched Resources
           <ArrowRight className="w-4 h-4" />
         </Link>
+        <p className="text-[11px] text-[#6e8a72] max-w-2xl mx-auto pt-6 leading-relaxed">
+          * {RESEARCH_NOTICE}
+        </p>
       </div>
     </div>
   );

@@ -275,14 +275,6 @@ export default function ComparePage() {
         </p>
       </div>
 
-      {/* Info notice */}
-      <div className="bg-[#f0f6ee] border border-[#c8dcc5] rounded-2xl p-4 flex gap-3 mb-8 text-xs sm:text-sm text-[#253f28]">
-        <Info className="w-5 h-5 text-[#3d7a48] shrink-0 mt-0.5" />
-        <p className="leading-relaxed">
-          Data reflected from independent research on 7 November 2026. Items not confirmable from official developer sources are explicitly labeled as <span className="font-bold">Not verified</span>.
-        </p>
-      </div>
-
       {/* Quick Comparison Presets */}
       <div className="mb-8">
         <p className="text-xs font-bold text-[#58755c] uppercase tracking-wider mb-3">
@@ -408,6 +400,11 @@ export default function ComparePage() {
           </button>
         </div>
       )}
+
+      {/* Bottom small text disclaimer */}
+      <p className="text-center text-[11px] text-[#6e8a72] max-w-2xl mx-auto pt-8 leading-relaxed">
+        * Data reflected from independent research on 15 November 2026. Items not confirmable from official developer sources are explicitly labeled as <span className="font-semibold">Not verified</span>. Always verify pricing directly on official store checkout pages.
+      </p>
     </div>
   );
 }

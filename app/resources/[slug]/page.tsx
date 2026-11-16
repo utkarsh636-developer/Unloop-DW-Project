@@ -67,12 +67,6 @@ export default async function ResourceDetailPage({ params }: { params: Promise<{
         <span className="text-[#162e1a] font-bold truncate">{resource.name}</span>
       </nav>
 
-      {/* Research notice banner */}
-      <div className="bg-[#fcf8e8] border border-[#ecd99f] rounded-2xl p-4 sm:p-5 flex gap-3 mb-8 text-xs sm:text-sm text-[#664d14]">
-        <Info className="w-5 h-5 text-[#9a731b] shrink-0 mt-0.5" />
-        <p className="leading-relaxed">{RESEARCH_NOTICE}</p>
-      </div>
-
       {/* Main Two-Column Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
         {/* Left Column: Comprehensive Research Content (2 cols) */}
@@ -308,7 +302,7 @@ export default async function ResourceDetailPage({ params }: { params: Promise<{
       )}
 
       {/* Back button */}
-      <div className="mt-10 pt-6 border-t border-[#d4e2d1]">
+      <div className="mt-10 pt-6 border-t border-[#d4e2d1] flex flex-col sm:flex-row items-center justify-between gap-4">
         <Link
           href="/resources"
           className="inline-flex items-center gap-2 text-xs font-bold text-[#3d7a48] hover:text-[#162e1a] transition-colors"
@@ -316,6 +310,9 @@ export default async function ResourceDetailPage({ params }: { params: Promise<{
           <ArrowLeft className="w-4 h-4" />
           Back to all resources
         </Link>
+        <p className="text-[11px] text-[#6e8a72] text-center sm:text-right leading-relaxed max-w-xl">
+          * {RESEARCH_NOTICE}
+        </p>
       </div>
     </div>
   );

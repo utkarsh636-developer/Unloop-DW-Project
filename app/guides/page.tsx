@@ -153,7 +153,7 @@ const guides: Guide[] = [
     ],
     resourceSlug: 'cold-turkey',
     color: 'emerald',
-    note: 'Exact Pro pricing was not visible on the official page text read on 7 November 2026. Third-party sites report approximately US$39 (unverified). Privacy policy is effective 15 October 2026.',
+    note: 'Free version ₹0. Pro is billed in USD via Paddle with no official INR price (reseller lists ₹2,499, unverified). Student 20% discount available. Researched on 15 November 2026.',
   },
   {
     id: 'forest-study-sessions',
@@ -214,7 +214,7 @@ const guides: Guide[] = [
     ],
     resourceSlug: 'forest',
     color: 'emerald',
-    note: 'Forest pricing model varies: current App Store lists Free with Forest Plus subscription; an older listing showed a one-time fee. Check store pricing before subscribing. Dedicated help center URL was not verified on 7 November 2026.',
+    note: 'Forest is free with ads; optional Forest Plus subscription available. One-time Pro fee discontinued. Regional INR prices vary by store listing. Researched on 15 November 2026.',
   },
 ];
 
@@ -263,12 +263,6 @@ export default function GuidesPage() {
         <p className="text-[#4f6652] text-sm sm:text-base max-w-2xl leading-relaxed">
           Practical, step-by-step walkthroughs to configure your digital wellness setup. Check off steps as you complete them to track your progress.
         </p>
-      </div>
-
-      {/* Research notice */}
-      <div className="bg-[#fcf8e8] border border-[#ecd99f] rounded-2xl p-4 sm:p-5 flex gap-3 mb-8 text-xs sm:text-sm text-[#664d14]">
-        <Info className="w-5 h-5 text-[#9a731b] shrink-0 mt-0.5" />
-        <p className="leading-relaxed">{RESEARCH_NOTICE}</p>
       </div>
 
       {/* Jump to Guide Bar */}
@@ -483,7 +477,7 @@ export default function GuidesPage() {
                 {/* Footer Link to Tool Details */}
                 <div className="pt-4 border-t border-[#e2ede0] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
                   <span className="text-[#6e8a72] font-medium">
-                    Researched on 7 November 2026.
+                    Researched on 15 November 2026.
                   </span>
                   <Link
                     href={`/resources/${guide.resourceSlug}`}
@@ -511,6 +505,11 @@ export default function GuidesPage() {
           We are researching verified step-by-step instructions for TickTick, Freedom, ScreenZen, iOS Sleep Focus, and LeechBlock NG.
         </p>
       </div>
+
+      {/* Bottom small text disclaimer */}
+      <p className="text-center text-[11px] text-[#6e8a72] max-w-2xl mx-auto pt-8 leading-relaxed">
+        * {RESEARCH_NOTICE}
+      </p>
     </div>
   );
 }

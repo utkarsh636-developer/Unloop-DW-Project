@@ -421,12 +421,6 @@ export default function HomePage() {
           </Link>
         </div>
 
-        {/* Research Notice Banner */}
-        <div className="bg-[#fcf8e8] border border-[#ecd99f] rounded-2xl p-4 sm:p-5 flex gap-3 mb-8 text-xs sm:text-sm text-[#664d14]">
-          <Info className="w-5 h-5 text-[#9a731b] shrink-0 mt-0.5" />
-          <p className="leading-relaxed">{RESEARCH_NOTICE}</p>
-        </div>
-
         {/* Featured Resources Grid: 6 cards aligned across 2 rows of 3 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {featuredResources.map((r) => (
@@ -442,6 +436,9 @@ export default function HomePage() {
             Explore all {resources.length} resources in directory
             <ArrowRight className="w-4 h-4" />
           </Link>
+          <p className="text-[11px] text-[#6e8a72] max-w-2xl mx-auto pt-5 leading-relaxed">
+            * {RESEARCH_NOTICE}
+          </p>
         </div>
       </section>
 

@@ -81,12 +81,6 @@ function ResourcesContent() {
         </div>
       </div>
 
-      {/* Research notice banner */}
-      <div className="bg-[#fcf8e8] border border-[#ecd99f] rounded-2xl p-4 sm:p-5 flex gap-3 mb-8 text-xs sm:text-sm text-[#664d14]">
-        <Info className="w-5 h-5 text-[#9a731b] shrink-0 mt-0.5" />
-        <p className="leading-relaxed">{RESEARCH_NOTICE}</p>
-      </div>
-
       {/* Filter and Search Panel */}
       <div className="bg-white border border-[#d4e2d1] rounded-3xl p-6 sm:p-8 mb-8 shadow-xs space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-[#e2ede0]">
@@ -232,6 +226,13 @@ function ResourcesContent() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Unverified resources disclaimer at bottom with small text */}
+      <div className="pt-10 pb-4 text-center border-t border-[#d4e2d1]/60 mt-12">
+        <p className="text-[11px] text-[#6e8a72] max-w-2xl mx-auto leading-relaxed">
+          * {RESEARCH_NOTICE}
+        </p>
+      </div>
     </div>
   );
 }

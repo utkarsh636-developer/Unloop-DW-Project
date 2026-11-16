@@ -1,5 +1,5 @@
 // Unloop – Central Resource Dataset
-// Research date: 7 November 2026.
+// Research date: 15 November 2026.
 // Features, pricing and availability may change. Verify at official sources before use.
 // "Not verified" means the information could not be confirmed from an official source.
 
@@ -30,10 +30,10 @@ export interface Resource {
   checkedOn: string;
 }
 
-export const CHECKED_ON = '2026-11-07';
+export const CHECKED_ON = '2026-11-15';
 
 export const RESEARCH_NOTICE =
-  'Resource information was researched on 7 November 2026. Features, availability, pricing, and privacy policies may change. Please check official sources before installing or purchasing a resource.';
+  'Resource details and India pricing were researched on 15 November 2026. Features, regional availability, pricing, and store policies may change. Unverified items or third-party reseller listings are explicitly noted — always verify on official checkout screens.';
 
 export const resources: Resource[] = [
   // ── Focus & Productivity ─────────────────────────────────────────────────
@@ -48,7 +48,7 @@ export const resources: Resource[] = [
     platforms: ['Web', 'Android', 'iOS/iPadOS'],
     pricingLabel: 'Freemium',
     pricingNote:
-      'Free plan: 9 lists, 99 tasks per list, 2 reminders per task, 5 habits. Premium: US$49.99 per year on the official page as of 7 Nov 2026 (source: official pricing page). Prices vary by country and store. An older third-party figure of US$35.99/year is outdated.',
+      'Free plan: 9 lists, 99 tasks per list, 2 reminders per task, 5 habits. Premium annual: not verified (official site bills US$49.99/year; source: ticktick.com/upgrade). A third-party tracker (AppTail, undated) shows monthly ₹269 on the India App Store (apptail.io/app/app-csd/india), but its annual figure was unreadable.',
     keyFeatures: [
       'List and Kanban views',
       'Natural-language task entry',
@@ -83,7 +83,7 @@ export const resources: Resource[] = [
     platforms: ['iOS/iPadOS', 'Browser extensions (Chrome, Firefox)', 'Android (not verified directly)'],
     pricingLabel: 'Freemium',
     pricingNote:
-      'Store listings conflict. The current App Store listing shows Free with a Forest Plus subscription (monthly US$5.99 seen; annual prices vary by country). An older listing showed a US$3.99 one-time price — the model has changed. Exact free vs Plus feature split: Not verified. Prices vary by country.',
+      'Core app is free with ads, plus an optional Forest Plus subscription. No current INR price found. An older India listing showed a ₹399 one-time price, but the official site states the one-time "Pro" license was discontinued (sources: forestapp.cc/llms.txt, AppTail). Check live store listing for current regional pricing.',
     keyFeatures: [
       'Gamified focus timer',
       'Allow Lists that block non-allowed apps (iOS/iPadOS 16+)',
@@ -116,7 +116,7 @@ export const resources: Resource[] = [
     platforms: ['Mac', 'Windows', 'iOS', 'Android', 'Chromebook/Linux'],
     pricingLabel: 'Freemium',
     pricingNote:
-      'Free account: Start Now sessions only, max 2 hours, no recurring sessions, no Locked Mode. Premium adds those features. Premium prices: Not verified on an official page. Third-party sites report approximately US$8.99/month or US$3.33/month billed yearly — these are unverified estimates. Prices vary by country.',
+      'Free account: ₹0 (Start Now sessions only, max 2 hours). Premium annual: ₹2,999/year on the India App Store with a free trial (source: apps.apple.com/in/app/id1269788228). Monthly and Forever lifetime INR prices not verified.',
     keyFeatures: [
       'Block apps, websites or the entire internet',
       'Custom blocklists',
@@ -150,7 +150,7 @@ export const resources: Resource[] = [
     platforms: ['Windows', 'macOS'],
     pricingLabel: 'Freemium',
     pricingNote:
-      'Free version available with a 7-day Pro trial. Pro is a one-time purchase with lifetime updates, valid for all computers you personally use, and includes a 30-day refund policy. Students can request a 20% discount via the support page. Exact Pro price: Not verified from the page read during research. Third-party sources report approximately US$39, but this is unverified.',
+      'Free version: ₹0 (covers website blocking & exceptions). Pro is billed in USD through Paddle (official site: getcoldturkey.com/pricing), with no official INR price. An Indian reseller (Techjockey) lists ₹2,499, but that is not an official price. Students can request a 20% discount on the official site.',
     keyFeatures: [
       'Website blocking (Free)',
       'Website exceptions (Free)',
@@ -185,7 +185,7 @@ export const resources: Resource[] = [
     platforms: ['Firefox (desktop and Android)', 'Chrome'],
     pricingLabel: 'Free',
     pricingNote:
-      'No paid tier found. Source code is under the Mozilla Public License 2.0. The developer accepts optional contributions.',
+      '₹0, 100% free and open source under Mozilla Public License 2.0 (source: addons.mozilla.org/en-US/firefox/addon/leechblock-ng/). The developer accepts optional contributions.',
     keyFeatures: [
       'Up to 30 block sets',
       'Block by time period, time limit or both',
@@ -220,7 +220,7 @@ export const resources: Resource[] = [
     platforms: ['Android', 'iOS (15.0 or later)'],
     pricingLabel: 'Free',
     pricingNote:
-      'Listed as free with optional in-app purchases. The App Store describes it as donation-supported. A reviewer describes purchases as an optional tip, not a paywall — but that is a user comment, not an official statement.',
+      '₹0 to use all core features (wait pauses, app limits, and schedules). Optional tip amounts in INR: not verified (source: apps.apple.com/us/app/-/id1541027222). Donation-supported.',
     keyFeatures: [
       'Pause before opening selected apps (wait time can increase with each use)',
       'Interruptions during scrolling (short time bursts)',
@@ -254,7 +254,7 @@ export const resources: Resource[] = [
     platforms: ['Android', 'iOS (17.0+)'],
     pricingLabel: 'Freemium',
     pricingNote:
-      'iOS: free to download; in-app purchases include Premium annual subscriptions (US$19.99 and US$4.99 listed on the App Store) and Lifetime access (US$59.99). Which features are free vs paid: Not verified. Android prices: Not verified. Prices vary by country.',
+      'iOS (India App Store): Monthly ₹299, ₹399 or ₹499; Annual ₹999 or ₹1,999; Lifetime ₹2,999, ₹4,999, ₹5,900 or ₹6,900 (source: apps.apple.com/in/app/id6742103871). Android INR pricing: not verified.',
     keyFeatures: [
       'Icon-free, text-based home screen',
       'Smart folders and widgets',
@@ -288,7 +288,7 @@ export const resources: Resource[] = [
     platforms: ['Android (varies by device; Android 10+ for some features)'],
     pricingLabel: 'Built-in',
     pricingNote:
-      'Included with supported Android devices. No separate purchase needed. Access: Settings > Digital Wellbeing & parental controls.',
+      '₹0, built directly into supported Android devices. No separate purchase or download needed (source: support.google.com/android/answer/9346420). Access: Settings > Digital Wellbeing & parental controls.',
     keyFeatures: [
       'Usage dashboard — unlocks and time per app',
       'App timers — icon dims and app closes when time runs out; resets at midnight',
@@ -321,7 +321,7 @@ export const resources: Resource[] = [
     platforms: ['iOS/iPadOS (15.6+)', 'Apple Vision', 'Android (not verified directly)'],
     pricingLabel: 'Freemium',
     pricingNote:
-      'Free to download with in-app purchases. Paid tier: Finch Plus, available at many price points depending on plan length and country. US App Store lists Finch Plus items from US$5.99 to US$69.99; India App Store lists from approximately ₹549 to ₹6,900. Free vs Finch Plus feature split: Not verified on an official page. Check the price on the checkout screen.',
+      'Free to download. Finch Plus in-app purchase tiers on India App Store: ₹99, ₹399, ₹699, ₹3,499, ₹3,599, ₹4,999, and ₹5,900 (the store listing does not specify which price is which plan duration; source: apps.apple.com/in/app/finch-self-care-pet/id1528595748). Check price on checkout.',
     keyFeatures: [
       'Daily check-ins and mood tracker',
       'Goal tracker',
@@ -358,7 +358,7 @@ export const resources: Resource[] = [
     platforms: ['Android'],
     pricingLabel: 'Paid',
     pricingNote:
-      'One-time purchase. Listed at approximately US$3.99 on Google Play (source: App Pricing Lab listing). A Dutch source lists €3.99. Prices vary by country. The developer offers refunds outside Google Play\'s return period via an in-app support button.',
+      'One-time purchase. Official INR price not found on store pages. Listed at US$3.99 on Google Play (source: App Pricing Lab, apppricinglab.com/app/google_play/com.samruston.buzzkill). Prices vary by country and regional taxes.',
     keyFeatures: [
       'If-this-then-that rules for notifications',
       'Restore notifications after reboot',
@@ -392,7 +392,7 @@ export const resources: Resource[] = [
     platforms: ['iPhone', 'iPad', 'Mac', 'Apple Watch'],
     pricingLabel: 'Built-in',
     pricingNote:
-      'Included with the operating system on supported Apple devices. Requires iOS 15 or later. Access: Settings > Focus.',
+      '₹0, included with the operating system on supported Apple devices (iOS 15+, iPadOS, macOS). No separate purchase or subscription needed. Access: Settings > Focus.',
     keyFeatures: [
       'Presets: Do Not Disturb, Driving, Personal, Sleep, Work',
       'Custom Focus modes',
@@ -427,7 +427,7 @@ export const resources: Resource[] = [
     platforms: ['Android (steps vary; some features require Android 11+)'],
     pricingLabel: 'Built-in',
     pricingNote:
-      'Included with Android. No separate purchase needed. Access: Settings > Notifications.',
+      '₹0, built directly into the Android operating system. Included with all supported Android devices with no separate download or purchase needed. Access: Settings > Notifications.',
     keyFeatures: [
       'Per-app notification settings',
       'Notification categories (channels) with their own sound and importance',
